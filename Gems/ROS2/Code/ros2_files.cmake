@@ -173,4 +173,6 @@ set(FILES
         Source/VehicleDynamics/WheelControllerComponent.cpp
         Source/VehicleDynamics/WheelControllerComponent.h
         Source/VehicleDynamics/WheelDynamicsData.h
-        )
+        Source/Manipulation/DraftArticulationForcePublisher.cpp
+        Source/Manipulation/DraftArticulationForcePublisher.h
+)

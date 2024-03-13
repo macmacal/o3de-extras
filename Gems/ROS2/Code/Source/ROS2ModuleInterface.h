@@ -46,6 +46,7 @@
 #include <VehicleDynamics/ModelComponents/SkidSteeringModelComponent.h>
 #include <VehicleDynamics/VehicleModelComponent.h>
 #include <VehicleDynamics/WheelControllerComponent.h>
+#include <Manipulation/DraftArticulationForcePublisher.h>
 
 namespace ROS2
 {
@@ -99,6 +100,7 @@ namespace ROS2
                     ROS2ContactSensorComponent::CreateDescriptor(),
                     FollowingCameraComponent::CreateDescriptor(),
                     GeoReferenceLevelComponent::CreateDescriptor(),
+                    DraftArticulationForcePublisher::CreateDescriptor(),
                 });
         }
 
