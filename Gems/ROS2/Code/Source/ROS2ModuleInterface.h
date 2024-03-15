@@ -25,6 +25,7 @@
 #include <Manipulation/Controllers/JointsArticulationControllerComponent.h>
 #include <Manipulation/Controllers/JointsPIDControllerComponent.h>
 #include <Manipulation/JointsManipulationComponent.h>
+#include <Manipulation/JointsPositionsComponent.h>
 #include <Manipulation/JointsTrajectoryComponent.h>
 #include <Odometry/ROS2OdometrySensorComponent.h>
 #include <Odometry/ROS2WheelOdometry.h>
@@ -45,6 +46,7 @@
 #include <VehicleDynamics/ModelComponents/SkidSteeringModelComponent.h>
 #include <VehicleDynamics/VehicleModelComponent.h>
 #include <VehicleDynamics/WheelControllerComponent.h>
+#include <Manipulation/DraftArticulationForcePublisher.h>
 
 namespace ROS2
 {
@@ -87,6 +89,7 @@ namespace ROS2
                     JointMotorControllerComponent::CreateDescriptor(),
                     ManualMotorControllerComponent::CreateDescriptor(),
                     JointsManipulationComponent::CreateDescriptor(),
+                    JointsPositionsComponent::CreateDescriptor(),
                     JointsArticulationControllerComponent::CreateDescriptor(),
                     JointsPIDControllerComponent::CreateDescriptor(),
                     JointsTrajectoryComponent::CreateDescriptor(),
@@ -97,6 +100,7 @@ namespace ROS2
                     ROS2ContactSensorComponent::CreateDescriptor(),
                     FollowingCameraComponent::CreateDescriptor(),
                     GeoReferenceLevelComponent::CreateDescriptor(),
+                    DraftArticulationForcePublisher::CreateDescriptor(),
                 });
         }
 

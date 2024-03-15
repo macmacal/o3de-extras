@@ -17,6 +17,11 @@ set(FILES
     Include/OpenXRVk/OpenXRVkSwapChain.h
     Include/OpenXRVk/OpenXRVkSystemComponent.h
     Include/OpenXRVk/OpenXRVkUtils.h
+    Include/OpenXRVk/OpenXRVkInteractionProfilesAsset.h
+    Include/OpenXRVk/OpenXRVkActionSetsAsset.h
+    Include/OpenXRVk/OpenXRVkAssetsValidator.h
+    Include/OpenXRVk/OpenXRVkActionsInterface.h
+    Include/OpenXRVk/OpenXRVkReferenceSpacesInterface.h
     Source/InputDeviceXRController.cpp
     Source/OpenXRVkCommon.h
     Source/OpenXRVkDevice.cpp
@@ -30,4 +35,13 @@ set(FILES
     Source/OpenXRVkUtils.cpp
     Source/XRCameraMovementComponent.cpp
     Source/XRCameraMovementComponent.h
+    Source/OpenXRVkInteractionProfilesAsset.cpp
+    Source/OpenXRVkActionSetsAsset.cpp
+    Source/OpenXRVkAssetsValidator.cpp
+    Source/OpenXRVkReferenceSpacesManager.cpp
+    Source/OpenXRVkReferenceSpacesManager.h
+    Source/OpenXRVkActionsManager.cpp
+    Source/OpenXRVkActionsManager.h
+    Source/OpenXRVkBehaviorReflection.cpp
+    Source/OpenXRVkBehaviorReflection.h
 )

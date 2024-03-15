@@ -30,6 +30,7 @@ set(FILES
         Source/Clock/SimulationClock.cpp
         Source/Communication/QoS.cpp
         Source/Communication/PublisherConfiguration.cpp
+        Source/Communication/SubscriberConfiguration.cpp
         Source/Communication/TopicConfiguration.cpp
         Source/ContactSensor/ROS2ContactSensorComponent.cpp
         Source/ContactSensor/ROS2ContactSensorComponent.h
@@ -81,6 +82,10 @@ set(FILES
         Source/Manipulation/JointInfo.cpp
         Source/Manipulation/JointStatePublisher.cpp
         Source/Manipulation/JointStatePublisher.h
+        Source/Manipulation/JointPositionsSubscriptionHandler.cpp
+        Source/Manipulation/JointPositionsSubscriptionHandler.h
+        Source/Manipulation/JointsPositionsComponent.cpp
+        Source/Manipulation/JointsPositionsComponent.h
         Source/Manipulation/JointsManipulationComponent.cpp
         Source/Manipulation/JointsManipulationComponent.h
         Source/Manipulation/JointsTrajectoryComponent.cpp
@@ -168,4 +173,6 @@ set(FILES
         Source/VehicleDynamics/WheelControllerComponent.cpp
         Source/VehicleDynamics/WheelControllerComponent.h
         Source/VehicleDynamics/WheelDynamicsData.h
-        )
+        Source/Manipulation/DraftArticulationForcePublisher.cpp
+        Source/Manipulation/DraftArticulationForcePublisher.h
+)
